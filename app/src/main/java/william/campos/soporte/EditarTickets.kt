@@ -99,8 +99,8 @@ class EditarTickets : AppCompatActivity() {
                 updateTicket.setString(5,txtEstadoDetalle.text.toString())
                 updateTicket.setString(6,txtF_cerradoDetalle.text.toString())
                 updateTicket.setString(7, txtUUIDDetalle.text.toString())
-                updateTicket.executeUpdate()
 
+                updateTicket.executeUpdate()
 
             }
         }

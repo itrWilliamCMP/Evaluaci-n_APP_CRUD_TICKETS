@@ -27,7 +27,7 @@ class Registrar : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        //Explicacion del profesor:
         //1- Mando a llamar a todos los elementos de la vista
         val imgAtras = findViewById<ImageView>(R.id.imgAtras)
         val txtRegistrarCorreo = findViewById<EditText>(R.id.txtRegistrarCorreo)
@@ -37,7 +37,6 @@ class Registrar : AppCompatActivity() {
         val btnRegresar = findViewById<Button>(R.id.btnRegresar)
 
         //2- Programar los botones
-        //TODO: Boton para crear la cuenta//
         //Al darle clic al boton se hace un insert a la base con los valores que escribe el usuario
         btnRegistrar.setOnClickListener {
             GlobalScope.launch(Dispatchers.IO) {
@@ -54,7 +53,7 @@ class Registrar : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     //Se Abre otra corrutina para mostrar un mensaje y limpiar los campos
 
-                    //Explicacion: del profe:
+
                     //Se hace en el Hilo Main por que el hilo IO no permite mostrar nada en pantalla
                     Toast.makeText(this@Registrar, "Usuario creado", Toast.LENGTH_SHORT).show()
                     txtRegistrarCorreo.setText("")

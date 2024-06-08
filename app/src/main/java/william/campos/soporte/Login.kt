@@ -23,7 +23,7 @@ class Login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        //Explicacion del profesor:
         //1- Mandamos a traer a todos los elementos de la vista
         val txtCorreoElectronico = findViewById<EditText>(R.id.txtCorreoElectronico)
         val txtContrasena = findViewById<EditText>(R.id.txtContrasena)
